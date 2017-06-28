@@ -1,11 +1,17 @@
 {
   "name": "pokemon-f",
   "version": "0.0.0",
-  "description": "Algorithm to calculate `f` on capture method",
+  "description": "Algorithm to calculate `f` on capture pokemon method",
   "main": "index.js",
   "repository": "https://github.com/bukinoshita/pokemon-f.git",
   "author": "Bu Kinoshita <bukinoshita@gmail.com>",
   "license": "MIT",
+  "keywords": [
+    "pokemon",
+    "pokeball",
+    "algorithm",
+    "pokemon-f"
+  ],
   "scripts": {
     "test": "xo && ava"
   },

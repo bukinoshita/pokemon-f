@@ -1,6 +1,6 @@
 # pokemon-f [![Build Status](https://travis-ci.org/bukinoshita/pokemon-f.svg?branch=master)](https://travis-ci.org/bukinoshita/pokemon-f)
 
-> Algorithm to calculate `f` on capture method
+> Algorithm to calculate `f` on capture pokemon method
 
 
 ## Install
