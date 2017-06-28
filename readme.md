@@ -35,6 +35,7 @@ Pokemon HPMax
 #### ball
 
 Type: `number`<br/>
+Required<br/>
 Options:
 - Greatball: `8`
 - Others: `12`
@@ -54,7 +55,7 @@ Pokemon current HP
 
 - [catch-pokemon](https://github.com/bukinoshita/catch-pokemon) — Pokemon game - Gotta catch 'em all
 - [pokemon-capture-quote](https://github.com/bukinoshita/pokemon-capture-quote) — Pokemon capture quote
-- [pokeball-shake](https://github.com/bukinoshita/pokeball-shake-quote) — Algorithm to determine how many times pokeball shakes
+- [pokeball-shake](https://github.com/bukinoshita/pokeball-shake) — Algorithm to determine how many times pokeball shakes
 
 
 ## License
