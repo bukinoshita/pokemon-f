@@ -14,14 +14,14 @@ $ npm install --save pokemon-f
 ```js
 const pokemonF = require('pokemon-f')
 
-pokemonF(35, 255, 23)
-// => 6
+pokemonF(35, 12, 23)
+// => 129
 ```
 
 
 ## API
 
-### pokemonF(hpMax, pokeball, hpCurrent)
+### pokemonF(hpMax, ball, hpCurrent)
 
 returns an `integer` between 1-255.
 
@@ -32,14 +32,12 @@ Required
 
 Pokemon HPMax
 
-#### pokeball
+#### ball
 
 Type: `number`<br/>
 Options:
-- Pokeball: `255`
-- Greatball: `200`
-- Ultraball: `150`
-- Safariball: `150`
+- Greatball: `8`
+- Others: `12`
 
 Pokeball type value
 
