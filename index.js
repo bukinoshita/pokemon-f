@@ -8,7 +8,7 @@ module.exports = async (hpMax, pokeball, hpCurrent) => {
   }
 
   if (typeof hpCurrent !== 'number') {
-    throw new TypeError('hpMax should be a number')
+    throw new TypeError('hpCurrent should be a number')
   }
 
   if (typeof pokeball !== 'string') {

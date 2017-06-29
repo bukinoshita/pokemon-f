@@ -54,7 +54,7 @@ Pokemon current HP
 - [pokemon-game](https://github.com/bukinoshita/pokemon-game) — Pokemon game — Get 'em all
 - [pokedex-api](https://github.com/bukinoshita/pokedex-api) — Pokedex API
 - [pokemon-catch-probability](https://github.com/bukinoshita/pokemon-catch-probability) — Check probabilty to catch a pokemon
--
+- [get-pokeball](https://github.com/bukinoshita/get-pokeball) — Get pokeball information
 - [catch-pokemon](https://github.com/bukinoshita/catch-pokemon) — Algorithm to catch a pokemon
 - [pokemon-capture-quote](https://github.com/bukinoshita/pokemon-capture-quote) — Pokemon capture quote
 - [pokeball-shake](https://github.com/bukinoshita/pokeball-shake) — Algorithm to determine how many times pokeball shakes
