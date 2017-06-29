@@ -27,7 +27,7 @@ returns a `promise`
 
 #### hpMax
 
-Type: `number`<br/>
+Type: `integer`<br/>
 Required
 
 Pokemon HPMax
@@ -43,7 +43,7 @@ Pokeball's name
 
 #### hpCurrent
 
-Type: `number`<br/>
+Type: `integer`<br/>
 Required
 
 Pokemon current HP
@@ -51,6 +51,10 @@ Pokemon current HP
 
 ## Related
 
+- [pokemon-game](https://github.com/bukinoshita/pokemon-game) — Pokemon game — Get 'em all
+- [pokedex-api](https://github.com/bukinoshita/pokedex-api) — Pokedex API
+- [pokemon-catch-probability](https://github.com/bukinoshita/pokemon-catch-probability) — Check probabilty to catch a pokemon
+-
 - [catch-pokemon](https://github.com/bukinoshita/catch-pokemon) — Algorithm to catch a pokemon
 - [pokemon-capture-quote](https://github.com/bukinoshita/pokemon-capture-quote) — Pokemon capture quote
 - [pokeball-shake](https://github.com/bukinoshita/pokeball-shake) — Algorithm to determine how many times pokeball shakes

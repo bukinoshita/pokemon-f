@@ -26,5 +26,8 @@
     "rules": {
       "object-curly-spacing": 0
     }
+  },
+  "dependencies": {
+    "get-pokeball": "^0.0.1"
   }
 }
