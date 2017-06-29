@@ -22,6 +22,9 @@
   "xo": {
     "space": true,
     "semicolon": false,
-    "esnext": true
+    "esnext": true,
+    "rules": {
+      "object-curly-spacing": 0
+    }
   }
 }

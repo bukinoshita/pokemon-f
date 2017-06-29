@@ -1,15 +1,22 @@
 'use strict'
 
-module.exports = (hpMax, ball, hpCurrent) => {
-  if (
-    typeof hpMax !== 'number' ||
-    typeof ball !== 'number' ||
-    typeof hpCurrent !== 'number'
-  ) {
-    throw new TypeError('Parameter must be a number')
+const getPokeball = require('get-pokeball')
+
+module.exports = async (hpMax, pokeball, hpCurrent) => {
+  if (typeof hpMax !== 'number') {
+    throw new TypeError('hpMax should be a number')
   }
 
-  const f = Math.floor(hpMax * 255 * 4 / (hpCurrent * ball))
+  if (typeof hpCurrent !== 'number') {
+    throw new TypeError('hpMax should be a number')
+  }
+
+  if (typeof pokeball !== 'string') {
+    throw new TypeError('pokeball should be a string')
+  }
+
+  const ball = await getPokeball(pokeball)
+  const f = Math.floor(hpMax * 255 * 4 / (hpCurrent * ball.value.f))
 
   if (f < 1 || f > 255) {
     throw new TypeError('An error occurred')

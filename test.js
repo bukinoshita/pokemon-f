@@ -3,9 +3,8 @@
 import test from 'ava'
 import m from './'
 
-test(t => {
+test(async t => {
   const hpMax = 35
-  const pokeball = 12
   const hpCurrent = 23
-  t.true(Number.isInteger(m(hpMax, pokeball, hpCurrent)))
+  t.true(Number.isInteger(await m(hpMax, 'pokeball', hpCurrent)))
 })
