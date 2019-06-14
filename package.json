@@ -6,6 +6,9 @@
   "repository": "https://github.com/bukinoshita/pokemon-f.git",
   "author": "Bu Kinoshita <bukinoshita@gmail.com>",
   "license": "MIT",
+  "files": [
+    "index.js"
+  ],
   "keywords": [
     "pokemon",
     "pokeball",
@@ -13,21 +16,35 @@
     "pokemon-f"
   ],
   "scripts": {
-    "test": "xo && ava"
-  },
-  "devDependencies": {
-    "ava": "^0.20.0",
-    "xo": "^0.18.2"
-  },
-  "xo": {
-    "space": true,
-    "semicolon": false,
-    "esnext": true,
-    "rules": {
-      "object-curly-spacing": 0
-    }
+    "test": "ava",
+    "lint": "xo"
   },
   "dependencies": {
-    "get-pokeball": "^0.0.1"
+    "get-pokeball": "0.0.2"
+  },
+  "devDependencies": {
+    "ava": "2.1.0",
+    "eslint-config-prettier": "4.3.0",
+    "husky": "2.4.1",
+    "lint-staged": "8.2.1",
+    "prettier": "1.18.2",
+    "xo": "0.24.0"
+  },
+  "xo": {
+    "extends": [
+      "prettier"
+    ]
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --semi false --single-quote --write",
+      "yarn lint",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }

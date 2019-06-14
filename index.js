@@ -1,8 +1,7 @@
-'use strict'
-
+// Packages
 const getPokeball = require('get-pokeball')
 
-module.exports = async (hpMax, pokeball, hpCurrent) => {
+const pokemonF = async (hpMax, pokeball, hpCurrent) => {
   if (typeof hpMax !== 'number') {
     throw new TypeError('hpMax should be a number')
   }
@@ -16,7 +15,7 @@ module.exports = async (hpMax, pokeball, hpCurrent) => {
   }
 
   const ball = await getPokeball(pokeball)
-  const f = Math.floor(hpMax * 255 * 4 / (hpCurrent * ball.value.f))
+  const f = Math.floor((hpMax * 255 * 4) / (hpCurrent * ball.value.f))
 
   if (f < 1 || f > 255) {
     throw new TypeError('An error occurred')
@@ -24,3 +23,5 @@ module.exports = async (hpMax, pokeball, hpCurrent) => {
 
   return f
 }
+
+module.exports = pokemonF

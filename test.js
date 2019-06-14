@@ -1,7 +1,8 @@
-'use strict'
-
+// Packages
 import test from 'ava'
-import m from './'
+
+// Root
+import m from '.'
 
 test('pass', async t => {
   const hpMax = 35
@@ -12,7 +13,7 @@ test('pass', async t => {
 test('hpMax error', async t => {
   const hpMax = 'a'
   const hpCurrent = 23
-  const error = await t.throws(m(hpMax, 'pokeball', hpCurrent))
+  const error = await t.throwsAsync(m(hpMax, 'pokeball', hpCurrent))
 
   t.is(error.message, 'hpMax should be a number')
 })
@@ -20,7 +21,7 @@ test('hpMax error', async t => {
 test('hpCurrent error', async t => {
   const hpMax = 35
   const hpCurrent = '23'
-  const error = await t.throws(m(hpMax, 'pokeball', hpCurrent))
+  const error = await t.throwsAsync(m(hpMax, 'pokeball', hpCurrent))
 
   t.is(error.message, 'hpCurrent should be a number')
 })
@@ -28,7 +29,7 @@ test('hpCurrent error', async t => {
 test('pokeball error', async t => {
   const hpMax = 35
   const hpCurrent = 23
-  const error = await t.throws(m(hpMax, 2, hpCurrent))
+  const error = await t.throwsAsync(m(hpMax, 2, hpCurrent))
 
   t.is(error.message, 'pokeball should be a string')
 })
@@ -36,7 +37,7 @@ test('pokeball error', async t => {
 test('pokeball not found', async t => {
   const hpMax = 35
   const hpCurrent = 23
-  const error = await t.throws(m(hpMax, 'nice', hpCurrent))
+  const error = await t.throwsAsync(m(hpMax, 'nice', hpCurrent))
 
   t.is(error.message, 'Pokeball not found')
 })
