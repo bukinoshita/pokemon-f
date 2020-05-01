@@ -2,12 +2,16 @@
   "name": "pokemon-f",
   "version": "0.0.2",
   "description": "Algorithm to calculate `f` on capture pokemon method",
-  "main": "index.js",
-  "repository": "https://github.com/bukinoshita/pokemon-f.git",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": "bukinoshita/pokemon-f",
   "author": "Bu Kinoshita <bukinoshita@gmail.com>",
   "license": "MIT",
+  "engines": {
+    "node": ">=10"
+  },
   "files": [
-    "index.js"
+    "dist"
   ],
   "keywords": [
     "pokemon",
@@ -16,35 +20,19 @@
     "pokemon-f"
   ],
   "scripts": {
-    "test": "ava",
-    "lint": "xo"
+    "build": "tsc",
+    "prepublish": "yarn build",
+    "test": "jest --config=jest.config.json"
   },
   "dependencies": {
-    "get-pokeball": "0.0.3"
+    "get-pokeball": "1.0.1"
   },
   "devDependencies": {
-    "ava": "2.4.0",
-    "eslint-config-prettier": "6.10.0",
-    "husky": "3.1.0",
-    "lint-staged": "10.0.7",
-    "prettier": "1.19.1",
-    "xo": "0.25.3"
-  },
-  "xo": {
-    "extends": [
-      "prettier"
-    ]
-  },
-  "lint-staged": {
-    "*.js": [
-      "prettier --semi false --single-quote --write",
-      "yarn lint",
-      "git add"
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+    "@sindresorhus/tsconfig": "0.7.0",
+    "@types/jest": "25.2.1",
+    "@types/node": "13.13.4",
+    "jest": "25.5.3",
+    "ts-jest": "25.4.0",
+    "typescript": "3.8.3"
   }
 }
