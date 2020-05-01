@@ -1415,10 +1415,10 @@ get-caller-file@^2.0.1:
   resolved "https://registry.yarnpkg.com/get-caller-file/-/get-caller-file-2.0.5.tgz#4f94412a82db32f36e3b0b9741f8a97feb031f7e"
   integrity sha512-DyFP3BM/3YHTQOCUL/w0OZHR0lpKeGrxotcHWcqNEdnltqFwXVfhEBQ94eIo34AfQpo0rGki4cyIiftY06h2Fg==
 
-get-pokeball@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/get-pokeball/-/get-pokeball-1.0.0.tgz#e1a8fe9f86d974f7ed8f121b19859645285a9106"
-  integrity sha512-x7ZsvWFNUGoQhQVGfk0Rw4uoXkxw9gOXwLE7iAshbCvKZ/g8X7B5GlYuDZRbpLwv/88v6HliNbil3miAlcR0pQ==
+get-pokeball@1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/get-pokeball/-/get-pokeball-1.0.1.tgz#03c9a2096ee136532d59d7d12a609940de2525b4"
+  integrity sha512-ch4+bk0h8Ox4aK9xYMy8paD7tTbE8D7YR2eAeszFdCNYRRv0g9mPP31z4N5+bqULocMu0VeRxbzUYzG44zjkbQ==
 
 get-stream@^4.0.0:
   version "4.1.0"
