@@ -1,6 +1,6 @@
 {
   "name": "pokemon-f",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Algorithm to calculate `f` on capture pokemon method",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
