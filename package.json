@@ -20,7 +20,7 @@
     "lint": "xo"
   },
   "dependencies": {
-    "get-pokeball": "0.0.3"
+    "get-pokeball": "1.0.1"
   },
   "devDependencies": {
     "ava": "2.4.0",
