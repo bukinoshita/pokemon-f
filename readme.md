@@ -11,7 +11,7 @@ $ yarn add pokemon-f
 ## Usage
 
 ```js
-const pokemonF = require('pokemon-f')
+import { pokemonF } from 'pokemon-f'
 
 pokemonF(35, 'pokeball', 23)
 // => 129
@@ -21,11 +21,9 @@ pokemonF(35, 'pokeball', 23)
 
 ### pokemonF(hpMax, pokeball, hpCurrent)
 
-returns a `promise`
-
 #### hpMax
 
-Type: `integer`<br/>
+Type: `number`<br/>
 Required
 
 Pokemon HPMax
@@ -40,7 +38,7 @@ Pokeball's name
 
 #### hpCurrent
 
-Type: `integer`<br/>
+Type: `number`<br/>
 Required
 
 Pokemon current HP
